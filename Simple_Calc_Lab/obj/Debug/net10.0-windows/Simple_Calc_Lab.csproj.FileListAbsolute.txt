@@ -1,0 +1,17 @@
+C:\Users\bulaw\source\repos\Simple_Calc_Lab\bin\Debug\net10.0-windows\Simple_Calc_Lab.exe
+C:\Users\bulaw\source\repos\Simple_Calc_Lab\bin\Debug\net10.0-windows\Simple_Calc_Lab.deps.json
+C:\Users\bulaw\source\repos\Simple_Calc_Lab\bin\Debug\net10.0-windows\Simple_Calc_Lab.runtimeconfig.json
+C:\Users\bulaw\source\repos\Simple_Calc_Lab\bin\Debug\net10.0-windows\Simple_Calc_Lab.dll
+C:\Users\bulaw\source\repos\Simple_Calc_Lab\bin\Debug\net10.0-windows\Simple_Calc_Lab.pdb
+C:\Users\bulaw\source\repos\Simple_Calc_Lab\obj\Debug\net10.0-windows\Simple_Calc_Lab.Calc_Mod.resources
+C:\Users\bulaw\source\repos\Simple_Calc_Lab\obj\Debug\net10.0-windows\Simple_Calc_Lab.csproj.GenerateResource.cache
+C:\Users\bulaw\source\repos\Simple_Calc_Lab\obj\Debug\net10.0-windows\Simple_Calc_Lab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bulaw\source\repos\Simple_Calc_Lab\obj\Debug\net10.0-windows\Simple_Calc_Lab.AssemblyInfoInputs.cache
+C:\Users\bulaw\source\repos\Simple_Calc_Lab\obj\Debug\net10.0-windows\Simple_Calc_Lab.AssemblyInfo.cs
+C:\Users\bulaw\source\repos\Simple_Calc_Lab\obj\Debug\net10.0-windows\Simple_Calc_Lab.csproj.CoreCompileInputs.cache
+C:\Users\bulaw\source\repos\Simple_Calc_Lab\obj\Debug\net10.0-windows\Simple_Calc_Lab.dll
+C:\Users\bulaw\source\repos\Simple_Calc_Lab\obj\Debug\net10.0-windows\refint\Simple_Calc_Lab.dll
+C:\Users\bulaw\source\repos\Simple_Calc_Lab\obj\Debug\net10.0-windows\Simple_Calc_Lab.pdb
+C:\Users\bulaw\source\repos\Simple_Calc_Lab\obj\Debug\net10.0-windows\Simple_Calc_Lab.genruntimeconfig.cache
+C:\Users\bulaw\source\repos\Simple_Calc_Lab\obj\Debug\net10.0-windows\ref\Simple_Calc_Lab.dll
+C:\Users\bulaw\source\repos\Simple_Calc_Lab\obj\Debug\net10.0-windows\Simple_Calc_Lab.Properties.Resources.resources
