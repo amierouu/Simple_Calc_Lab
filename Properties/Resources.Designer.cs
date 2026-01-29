@@ -59,5 +59,25 @@ namespace Simple_Calc_Lab.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _8373545 {
+            get {
+                object obj = ResourceManager.GetObject("8373545", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap historique_icone_de_l_historique_gris {
+            get {
+                object obj = ResourceManager.GetObject("historique-icone-de-l-historique-gris", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
