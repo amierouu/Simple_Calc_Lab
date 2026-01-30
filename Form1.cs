@@ -79,34 +79,57 @@ namespace Simple_Calc_Lab
 
         private void btn_posneg_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(inpbx.Text))
-                return;
-
             string text = inpbx.Text;
 
-            // Find the last operator 
-            int lastOp = -1;
-            for (int i = text.Length - 1; i > 0; i--)
+            // If empty -> start a negative number
+            if (string.IsNullOrEmpty(text))
             {
-                if ("+-*/".Contains(text[i]))
+                inpbx.Text = "-";
+                return;
+            }
+
+            // If the expression currently ends with an operator, append a unary minus
+            char lastChar = text[text.Length - 1];
+            if ("+-*/".Contains(lastChar))
+            {
+                // Prevent "--"
+                if (lastChar == '-') return;
+                inpbx.Text = text + "-";
+                return;
+            }
+
+            // Find start index of the last numeric token (digits and decimal)
+            int i = text.Length - 1;
+            while (i >= 0 && (char.IsDigit(text[i]) || text[i] == '.'))
+                i--;
+            int start = i + 1;
+
+            // If there's a unary '-' immediately before the digits and it's a unary (start of text or after operator),
+            // include it as part of the number.
+            if (start - 1 >= 0 && text[start - 1] == '-')
+            {
+                if (start - 2 < 0 || "+-*/".Contains(text[start - 2]))
                 {
-                    lastOp = i;
-                    break;
+                    start = start - 1;
                 }
             }
 
-            string before = lastOp >= 0 ? text.Substring(0, lastOp + 1) : "";
-            string currentNum = lastOp >= 0 ? text.Substring(lastOp + 1) : text;
+            string before = text.Substring(0, start);
+            string number = text.Substring(start);
 
-            if (string.IsNullOrEmpty(currentNum) || currentNum == "0")
+            if (string.IsNullOrEmpty(number))
+            {
+                // nothing to toggle; allow starting a negative number
+                inpbx.Text = text + "-";
                 return;
+            }
 
-            if (currentNum.StartsWith("-"))
-                currentNum = currentNum.Substring(1);
+            if (number.StartsWith("-"))
+                number = number.Substring(1); // remove unary minus
             else
-                currentNum = "-" + currentNum;
+                number = "-" + number; // add unary minus
 
-            inpbx.Text = before + currentNum;
+            inpbx.Text = before + number;
         }
 
         private void btn_erase_Click(object sender, EventArgs e)
